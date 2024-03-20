@@ -1,30 +1,40 @@
 {
-  "companyName" : "I Scream Inc.",
-  "headOffice" : "South Pole, Antarctica",
-  "established" : 2001,
-  "active" : true,
-  "topFlavors" : [
+  "companyName": "I Scream Inc.",
+  "headOffice": "South Pole, Antarctica",
+  "established": 2001,
+  "active": true,
+  "topFlavors": [
     {
-      "name" : "Monstrous Mint",
-      "calories" : 400,
-      "type" : "ice cream",
-      "ingredients" : [
+      "name": "Monstrous Mint",
+      "calories": 400,
+      "type": "ice cream",
+      "ingredients": [
         "peppermint cream",
         "dark chocolate chips",
         "vanilla extract"
       ],
-      "image" : "chocolate-mint.svg"
+      "image": "chocolate-mint.svg"
     },
     {
-      "name" : "Perfect Peach Mango",
-      "calories" : 350,
-      "type" : "sorbet",
-      "ingredients" : [
-        "peach purée",
-        "mango chunks",
-        "clover honey"
-      ],
-      "image" : "peach-mango.svg"
+      "name": "Perfect Peach Mango",
+      "calories": 350,
+      "type": "sorbet",
+      "ingredients": ["peach purée", "mango chunks", "clover honey"],
+      "image": "peach-mango.svg"
+    },
+    {
+      "name": "Strawberry Fields Forever",
+      "calories": 320,
+      "type": "ice cream",
+      "ingredients": ["fresh strawberries", "cream", "sugar"],
+      "image": "strawberry-sprinkle.svg"
+    },
+    {
+      "name": "Tropical Tango",
+      "calories": 380,
+      "type": "ice cream",
+      "ingredients": ["coconut milk", "pineapple chunks", "mango purée"],
+      "image": "ice-cream-xtra1.svg"
     }
   ]
 }

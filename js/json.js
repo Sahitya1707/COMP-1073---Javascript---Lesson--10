@@ -7,7 +7,7 @@ async function populate() {
   // Introducing JavaScript Object Notation (JSON): https://json.org/
   // STEP 4: Store the URL of a JSON file in a variable */
   const requestURL =
-    "https://smccrindle.github.io/comp1073module10/js/i-scream.json";
+    "https://sahitya1707.github.io/COMP-1073---Javascript---Lesson--10/js/i-scream.json";
   // STEP 5: Use the new URL to create a new request object
   const request = new Request(requestURL);
   // STEP 6: Make a network request with the fetch() function, which returns a Response object
@@ -48,14 +48,19 @@ function showTopFlavors(jsonObj) {
     let article = document.createElement("article"),
       h2 = document.createElement("h2"),
       image = document.createElement("img"),
-      ul = document.createElement("ul");
-    console.log(h2);
+      ul = document.createElement("ul"),
+      paragraphCalories = document.createElement("p"),
+      paragraphType = document.createElement("p");
+
     // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
     h2.textContent = topFlavors[i].name;
-    console.log(topFlavors[i].name);
-    console.log(topFlavors[i]["name"]);
+
     image.setAttribute("src", `images/${topFlavors[i].image}`);
-    console.log(image);
+
+    // lab
+    paragraphCalories.textContent = `${topFlavors[i].calories} calories`;
+    paragraphType.textContent = `Type: ${topFlavors[i].type} `;
+
     // STEP 10g: Build a loop for the ingredients array in the JSON
     // add the ingredient to the UL
     let ingredients = topFlavors[i].ingredients;
@@ -63,17 +68,18 @@ function showTopFlavors(jsonObj) {
     ingredients.forEach((e) => {
       let listItem = document.createElement("li");
       listItem.textContent = e;
-      //   console.log(listItem);
 
       // STEP 10h: Append each of the above HTML elements to the ARTICLE element
       ul.appendChild(listItem);
-      console.log(ul);
     });
     // STEP 10i: Append each complete ARTICLE element to the SECTION element
     article.appendChild(h2);
     article.appendChild(image);
     article.appendChild(ul);
-    console.log(article);
+    // lab
+    article.appendChild(paragraphCalories);
+    article.appendChild(paragraphType);
+
     section.appendChild(article);
   }
 }
